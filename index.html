@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj S — Full Stack & AI Engineer</title>
+    <meta name="description" content="Portfolio of Suraj S — Full Stack Developer & AI Engineer specializing in React.js, Node.js, MongoDB, and LLM-powered systems. Based in Bengaluru, India.">
+    <meta name="keywords" content="Suraj S, Full Stack Developer, AI Engineer, React.js, Node.js, Portfolio, Bengaluru">
+    <meta name="author" content="Suraj S">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Suraj S</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="projects.html" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#case-studies" class="nav-link" data-text="Case Studies">Case Studies</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="certifications.html" class="nav-link" data-text="Certs">Certs</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+            <a href="uploads/SurajResumee.pdf" target="_blank" class="nav-resume-btn">
+                <span>Resume</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    Open to Opportunities
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Suraj S</span>
+                </h1>
+                <div class="hero-roles animate-on-scroll">
+                    <span class="role-prefix">I build</span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    Computer Science & Design undergraduate passionate about building 
+                    <span class="highlight">end-to-end web applications</span> and 
+                    <span class="highlight">LLM-powered systems</span> using modern technologies.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="projects.html" class="btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="certifications.html" class="btn-secondary">
+                        <span>View Certifications</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="18">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="8.9">0</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="profile-card">
+                    <img src="uploads/IMG_20250202_002647.jpg" alt="Suraj S — Full Stack & AI Engineer" class="profile-image" loading="eager">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>I'm a <strong>Computer Science & Design Engineering</strong> student at <strong>S J C Institute of Technology</strong>, Chikkaballapur, pursuing my B.E. with a strong CGPA of <strong>8.9/10</strong>. Expected graduation in <strong>May 2027</strong>.</p>
+                    <p>My passion lies at the intersection of <strong>full-stack web development</strong> and <strong>artificial intelligence</strong>. I love building applications that leverage the power of LLMs, multi-agent architectures, and RAG systems to solve real-world problems.</p>
+                    <p>I've had hands-on experience as a <strong>Full Stack Web Development Intern</strong> at ElevanceSkills, where I developed and deployed production features using the MERN stack. I thrive in agile environments and take pride in writing clean, maintainable code.</p>
+                    <p>When I'm not coding, I'm exploring the latest in AI research, building IoT projects, or working on open-source contributions.</p>
+                </div>
+                <div class="about-details animate-on-scroll">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div class="detail-info">
+                            <span class="detail-label">Education</span>
+                            <span class="detail-value">B.E. — CS & Design</span>
+                            <span class="detail-sub">SJCIT • CGPA: 8.9/10</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div class="detail-info">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Bengaluru, India</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                        </div>
+                        <div class="detail-info">
+                            <span class="detail-label">Looking For</span>
+                            <span class="detail-value">Full Stack / AI Internship / Job</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </div>
+                        <div class="detail-info">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">surajsatish33@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line-connector"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Full Stack Web Development Intern</h3>
+                                <p class="timeline-company">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    ElevanceSkills · Remote
+                                </p>
+                            </div>
+                            <span class="timeline-date">Apr 2026 — May 2026</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>
+                                <span class="detail-arrow">▹</span>
+                                <span>Developed and deployed full-stack web features using <strong>React.js</strong> on the frontend and <strong>Node.js/Express.js</strong> on the backend, implementing RESTful APIs consumed by dynamic UI components.</span>
+                            </li>
+                            <li>
+                                <span class="detail-arrow">▹</span>
+                                <span>Designed and integrated <strong>MongoDB</strong> schemas for user and content management modules, optimising query performance through indexing and reducing average read latency.</span>
+                            </li>
+                            <li>
+                                <span class="detail-arrow">▹</span>
+                                <span>Collaborated in an agile remote environment, meeting all sprint deadlines and submitting deliverables ahead of schedule.</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Suraj190805/MediScan" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                                <a href="https://medi-scan-wine.vercel.app/" target="_blank" rel="noopener" class="project-link" title="Live Demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">MediScan AI</h3>
+                        <p class="project-description">
+                            Three-service medical imaging platform that combines deep learning with clinical interfaces. Upload chest X-rays, brain MRIs, bone X-rays, or CT scans and receive instant AI predictions with Grad-CAM visual explanations and clinical reasoning.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Multi-model DenseNet-121 for pneumonia, tumor, fracture & COVID
+                        </div>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Grad-CAM heatmaps & SHAP-style region analysis
+                        </div>
+                        <div class="project-tech">
+                            <span>React 19</span>
+                            <span>Express.js</span>
+                            <span>FastAPI</span>
+                            <span>PyTorch</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Suraj190805/crisis-decision-system" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Global Crisis Detection System</h3>
+                        <p class="project-description">
+                            Multi-agent AI platform where specialized agents monitor global news, geopolitical conflicts, sanctions, and tariffs to analyse downstream impact on trade and commodity markets.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Multi-agent architecture with specialized roles
+                        </div>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Structured decision reports across economic dimensions
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>LLMs</span>
+                            <span>RAG</span>
+                            <span>Multi-Agent</span>
+                        </div>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <div class="project-links"></div>
+                        </div>
+                        <h3 class="project-title">Alerto — IoT Accident Detection</h3>
+                        <p class="project-description">
+                            IoT device detecting vehicular collisions via accelerometer data and autonomously dispatching real-time GPS coordinates to emergency contacts via SMS/call.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Real-time collision detection via accelerometer
+                        </div>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Manual override to suppress false alerts
+                        </div>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>Embedded C</span>
+                            <span>GPS</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Suraj190805/knowledge-decay-tracker" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Knowledge Decay Tracker</h3>
+                        <p class="project-description">
+                            Full-stack AI learning management system enabling students to upload study materials (PDF/images), receive AI-generated quizzes and summaries, and track revision schedules with an analytics dashboard.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            File ingestion pipeline & LLM-based quiz generation
+                        </div>
+                        <div class="project-features">
+                            <span class="feature-dot"></span>
+                            Analytics dashboard & revision tracking
+                        </div>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>Groq API</span>
+                        </div>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+            </div>
+            <div class="certs-view-all animate-on-scroll" style="margin-top: 2.5rem;">
+                <a href="projects.html" class="btn-primary btn-large">
+                    <span>View All 8+ Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section case-studies-section" id="case-studies">
+        <div class="section-container">
+            <!-- Case Studies Hero -->
+            <div class="cs-hero animate-on-scroll">
+                <span class="cs-label">CASE STUDIES</span>
+                <h2 class="cs-heading">Real-world problems solved<br>with clean architecture.</h2>
+                <p class="cs-subtext">
+                    Deep dives into projects that tackle genuine challenges — from AI-powered learning systems
+                    to IoT safety devices. Each case study walks through the problem, delivery approach, and measurable impact.
+                </p>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="cs-stats animate-on-scroll">
+                <div class="cs-stat">
+                    <span class="cs-stat-number">3</span>
+                    <span class="cs-stat-label">CASE STUDIES</span>
+                </div>
+                <div class="cs-stat">
+                    <span class="cs-stat-number">2</span>
+                    <span class="cs-stat-label">LIVE DEMOS</span>
+                </div>
+                <div class="cs-stat">
+                    <span class="cs-stat-number">1</span>
+                    <span class="cs-stat-label">IOT BUILD</span>
+                </div>
+            </div>
+
+            <!-- Case Study 1 -->
+            <div class="cs-card animate-on-scroll">
+                <div class="cs-card-image">
+                    <img src="uploads/case-study-mediscan.png" alt="MediScan AI" class="cs-card-img" loading="lazy">
+                    <div class="cs-card-image-overlay">
+                        <span class="cs-study-number">CASE STUDY 1</span>
+                        <h4 class="cs-study-name">AI-powered medical image diagnostics</h4>
+                    </div>
+                </div>
+                <div class="cs-card-content">
+                    <div class="cs-card-badges">
+                        <span class="cs-badge-selected">SELECTED WORK</span>
+                        <span class="cs-badge-category">AI-DRIVEN HEALTHCARE</span>
+                    </div>
+                    <h3 class="cs-card-title">MediScan AI</h3>
+                    <p class="cs-card-desc">
+                        Full-stack medical imaging platform combining deep learning (DenseNet-121) with an intuitive clinical interface. Upload chest X-rays, brain MRIs, bone X-rays, or CT scans — and receive instant AI predictions with Grad-CAM visual explanations and clinical reasoning.
+                    </p>
+
+                    <div class="cs-pillars">
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-challenge">CHALLENGE</span>
+                            <p>Radiologists and clinicians face massive workloads, requiring tools that can fast-track triage and highlight key localized areas of concern in medical scans.</p>
+                        </div>
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-delivery">DELIVERY</span>
+                            <p>Developed a microservice architecture consisting of a React frontend, an Express orchestration server, and a FastAPI inference service running PyTorch DenseNet-121 models with Grad-CAM and SHAP explainability pipelines.</p>
+                        </div>
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-impact">IMPACT</span>
+                            <p>Enabled instant, interpretable AI diagnostics with clear visual attention heatmaps, automated finding summaries, study history tracking, and downloadable clinical PDF reports.</p>
+                        </div>
+                    </div>
+
+                    <div class="cs-tech-section">
+                        <span class="cs-tech-label">TECH STACK</span>
+                        <div class="cs-tech-tags">
+                            <span>REACT 19</span>
+                            <span>EXPRESS.JS</span>
+                            <span>FASTAPI</span>
+                            <span>PYTORCH</span>
+                            <span>MONGODB</span>
+                        </div>
+                    </div>
+                    <div class="cs-features">
+                        <span>Multi-model image inference</span>
+                        <span>Grad-CAM heatmap localization</span>
+                        <span>Interactive clinical reports & PDF exports</span>
+                    </div>
+                    <div class="cs-actions">
+                        <a href="https://github.com/Suraj190805/MediScan" target="_blank" rel="noopener" class="cs-btn cs-btn-source">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            Source
+                        </a>
+                        <a href="https://medi-scan-wine.vercel.app/" target="_blank" rel="noopener" class="cs-btn cs-btn-demo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            Live demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="cs-card cs-card-reverse animate-on-scroll">
+                <div class="cs-card-image">
+                    <img src="uploads/case-study-crisis-detection.png" alt="Global Crisis Detection System" class="cs-card-img" loading="lazy">
+                    <div class="cs-card-image-overlay">
+                        <span class="cs-study-number">CASE STUDY 2</span>
+                        <h4 class="cs-study-name">Multi-agent geopolitical intelligence</h4>
+                    </div>
+                </div>
+                <div class="cs-card-content">
+                    <div class="cs-card-badges">
+                        <span class="cs-badge-selected">SELECTED WORK</span>
+                        <span class="cs-badge-category">AI MULTI-AGENT SYSTEM</span>
+                    </div>
+                    <h3 class="cs-card-title">Global Crisis Detection System</h3>
+                    <p class="cs-card-desc">
+                        Multi-agent AI platform where specialized agents monitor global news, geopolitical conflicts, sanctions, and tariffs to analyse downstream impact on trade and commodity markets.
+                    </p>
+
+                    <div class="cs-pillars">
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-challenge">CHALLENGE</span>
+                            <p>Manually tracking geopolitical events across multiple sources is slow, error-prone, and fails to connect cascading effects across economic dimensions.</p>
+                        </div>
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-delivery">DELIVERY</span>
+                            <p>Designed a multi-agent architecture with LangChain, where each agent specializes in a domain — news, conflicts, sanctions — using RAG pipelines and LLM reasoning.</p>
+                        </div>
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-impact">IMPACT</span>
+                            <p>Produced structured decision reports spanning trade, commodities, and policy, demonstrating autonomous AI analysis capabilities across complex, multi-dimensional datasets.</p>
+                        </div>
+                    </div>
+
+                    <div class="cs-tech-section">
+                        <span class="cs-tech-label">TECH STACK</span>
+                        <div class="cs-tech-tags">
+                            <span>PYTHON</span>
+                            <span>LANGCHAIN</span>
+                            <span>LLMs</span>
+                            <span>RAG</span>
+                            <span>MULTI-AGENT</span>
+                        </div>
+                    </div>
+                    <div class="cs-features">
+                        <span>Autonomous agent orchestration</span>
+                        <span>Cross-domain analysis</span>
+                        <span>Structured decision reports</span>
+                    </div>
+                    <div class="cs-actions">
+                        <a href="https://github.com/Suraj190805/crisis-decision-system" target="_blank" rel="noopener" class="cs-btn cs-btn-source">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            Source
+                        </a>
+                        <a href="#" target="_blank" rel="noopener" class="cs-btn cs-btn-demo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            Live demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="cs-card animate-on-scroll">
+                <div class="cs-card-image">
+                    <img src="uploads/case-study-accident-detection.png" alt="Alerto — IoT Accident Detection" class="cs-card-img" loading="lazy">
+                    <div class="cs-card-image-overlay">
+                        <span class="cs-study-number">CASE STUDY 3</span>
+                        <h4 class="cs-study-name">IoT vehicular safety system</h4>
+                    </div>
+                </div>
+                <div class="cs-card-content">
+                    <div class="cs-card-badges">
+                        <span class="cs-badge-selected">SELECTED WORK</span>
+                        <span class="cs-badge-category">IOT & EMBEDDED SYSTEMS</span>
+                    </div>
+                    <h3 class="cs-card-title">Alerto — IoT Accident Detection</h3>
+                    <p class="cs-card-desc">
+                        IoT device detecting vehicular collisions via accelerometer data and autonomously dispatching real-time GPS coordinates to emergency contacts via SMS/call — potentially saving lives in critical moments.
+                    </p>
+
+                    <div class="cs-pillars">
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-challenge">CHALLENGE</span>
+                            <p>Road accidents in remote areas often go unreported for critical minutes. Victims may be unconscious and unable to call for help, making automated detection essential.</p>
+                        </div>
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-delivery">DELIVERY</span>
+                            <p>Built an Arduino-based system with accelerometer sensors for real-time collision detection, GPS module for location tracking, and GSM module for automated emergency SMS/calls.</p>
+                        </div>
+                        <div class="cs-pillar">
+                            <span class="cs-pillar-label cs-impact">IMPACT</span>
+                            <p>Created a low-cost, reliable safety device with manual override for false alerts, demonstrating how embedded systems can directly address life-threatening real-world problems.</p>
+                        </div>
+                    </div>
+
+                    <div class="cs-tech-section">
+                        <span class="cs-tech-label">TECH STACK</span>
+                        <div class="cs-tech-tags">
+                            <span>ARDUINO</span>
+                            <span>EMBEDDED C</span>
+                            <span>GPS MODULE</span>
+                            <span>GSM MODULE</span>
+                            <span>IOT</span>
+                        </div>
+                    </div>
+                    <div class="cs-features">
+                        <span>Real-time collision detection</span>
+                        <span>Automated emergency alerts</span>
+                        <span>Manual override system</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-showcase">
+
+                <!-- Languages -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">Languages</h3>
+                        <p class="skill-group-desc">Core programming languages I build with</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#E76F00" d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.762.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218"/><path fill="#E76F00" d="M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0 0-8.216 2.051-4.292 6.573"/><path fill="#E76F00" d="M14.401 0s2.494 2.494-2.365 6.338c-3.896 3.083-.889 4.842-.001 6.851-2.274-2.053-3.943-3.858-2.824-5.541 1.644-2.469 6.197-3.665 5.19-7.648"/></svg>
+                            Java
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#3776AB" d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+                            Python
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.594-.466-.837-.855-.065-.105-.114-.195-.12-.195l-1.83 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.01-.057z"/></svg>
+                            JavaScript
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="#00758F" stroke-width="1.5"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" fill="none" stroke="#00758F" stroke-width="1.5"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" fill="none" stroke="#00758F" stroke-width="1.5"/></svg>
+                            SQL
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">Frontend</h3>
+                        <p class="skill-group-desc">UI frameworks, styling, and browser-focused tooling</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.139" fill="#61DAFB"/><path fill="none" stroke="#61DAFB" stroke-width="1" d="M12 6.096c3.866 0 7.37.87 9.273 2.225.908.646 1.527 1.398 1.527 2.179 0 2.018-4.382 4.404-10.8 4.404S1.2 12.518 1.2 10.5c0-.781.619-1.533 1.527-2.179C4.63 6.966 8.134 6.096 12 6.096z"/><path fill="none" stroke="#61DAFB" stroke-width="1" d="M8.063 8.37C9.996 5.008 12.48 2.64 14.683 2.018c1.05-.297 2.02-.195 2.817.266 1.748 1.009 2.161 4.088 1.028 8.07-.233.82-.527 1.616-.875 2.375" transform="rotate(60 12 12)"/><path fill="none" stroke="#61DAFB" stroke-width="1" d="M8.063 8.37C9.996 5.008 12.48 2.64 14.683 2.018c1.05-.297 2.02-.195 2.817.266 1.748 1.009 2.161 4.088 1.028 8.07-.233.82-.527 1.616-.875 2.375" transform="rotate(-60 12 12)"/></svg>
+                            React.js
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#E34F26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.076-.757.076-.771.076-.757H6.436l.062.734.558 6.267h7.784l-.329 3.63-2.542.693-2.498-.693-.16-1.813H7.083l.32 3.563 4.566 1.258 4.597-1.258.454-5.09.044-.497H8.531z"/></svg>
+                            HTML
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#1572B6" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.002l5.355-1.12.93-13.47z"/></svg>
+                            CSS
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.594-.466-.837-.855-.065-.105-.114-.195-.12-.195l-1.83 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.01-.057z"/></svg>
+                            JavaScript
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#06B6D4" d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+                            Tailwind CSS
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#646CFF" d="M12 2L2 7l1.5 13L12 22l8.5-2L22 7 12 2zm0 2.1L19.4 7.6l-1.13 9.75L12 19.9l-6.27-2.55L4.6 7.6 12 4.1z"/><path fill="#646CFF" d="M14.7 9.3l-5.4 0-.3 2.4h4.8l-.5 4.2-2.3.7-2.3-.7-.15-1.7h-2.1l.3 3.4L12 19l4.2-1.3.7-6h-5l.2-1.5h5.1z"/></svg>
+                            Vite
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#7952B3" d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218C24 18.075 18.075 24 12.608 24H0V0h12.608C18.075 0 24 5.925 24 12.608v-1.218zM7.043 8.202H4.22v11.594h4.975c2.515 0 4.118-1.189 4.118-3.285 0-1.407-.856-2.494-2.232-2.803v-.08c1.082-.382 1.674-1.35 1.674-2.51 0-1.837-1.337-2.916-3.712-2.916z"/></svg>
+                            Bootstrap
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">Backend</h3>
+                        <p class="skill-group-desc">Server-side runtime, frameworks, and languages</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#68A063" d="M12 1.85c-.27 0-.55.07-.78.2L3.78 6.35c-.48.28-.78.8-.78 1.36v8.58c0 .56.3 1.08.78 1.36l2.13 1.23c1.03.5 1.4.5 1.88.5 1.54 0 2.42-.93 2.42-2.55V8.38c0-.12-.1-.22-.22-.22h-.93c-.12 0-.22.1-.22.22v8.47c0 .72-.74 1.43-1.95.83L4.8 16.4c-.08-.04-.12-.12-.12-.21V7.71c0-.09.05-.17.12-.21l7.44-4.3c.08-.04.17-.04.24 0l7.44 4.3c.08.04.12.12.12.21v8.47c0 .09-.05.17-.12.21l-7.44 4.3c-.07.04-.17.04-.24 0l-2.08-1.24c-.06-.04-.14-.04-.22-.01-.6.26-.72.3-1.28.46-.14.04-.35.1.08.3l2.72 1.6c.24.13.5.2.78.2s.55-.07.78-.2l7.44-4.3c.48-.28.78-.8.78-1.36V7.71c0-.56-.3-1.08-.78-1.36l-7.44-4.3c-.23-.13-.5-.2-.78-.2"/></svg>
+                            Node.js
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#999" d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 0 1-2.589 3.957 6.272 6.272 0 0 1-7.306-.933 6.575 6.575 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"/></svg>
+                            Express.js
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#3776AB" d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+                            Python
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#aaa" d="M7.172 20.36c-.904-.04-1.604-.457-2.09-1.132-.603-.855-.834-1.806-.675-2.816.207-1.311.964-2.262 2.066-2.9.41-.238.855-.391 1.32-.458.07-.01.147-.003.193.07.062.102.15.1.252.086.703-.096 1.31.12 1.836.554.376.31.637.706.812 1.154.028.072.064.107.14.124 1.22.275 2.005 1.006 2.328 2.198.18.664.15 1.33-.068 1.985a.11.11 0 0 0 .032.123c.45.431.627.972.571 1.59-.054.594-.329 1.068-.8 1.416-.36.265-.77.374-1.214.346-.122-.008-.186.035-.262.12-.56.634-1.27.888-2.105.742-.336-.06-.632-.213-.89-.424a.141.141 0 0 0-.163-.024c-.666.282-1.33.31-1.978-.04a1.87 1.87 0 0 1-.689-.624c-.059-.085-.11-.1-.2-.066-.786.293-1.452.118-1.98-.5-.386-.452-.484-.987-.357-1.558.137-.613.492-1.069 1.04-1.376.11-.062.15-.128.14-.252-.033-.433.075-.832.325-1.196.427-.622 1.025-.925 1.757-.89.19.01.373.054.548.126.074.03.118.017.168-.047.392-.505.92-.753 1.561-.742.023 0 .047.003.07.005z"/></svg>
+                            Flask
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#6BA539" d="M12 0L1.75 6v12L12 24l10.25-6V6L12 0zm0 2.25L19.5 6.6v10.8L12 21.75 4.5 17.4V6.6L12 2.25z"/><path fill="#6BA539" d="M12 5.5l-5.5 3.18v6.36L12 18.22l5.5-3.18V8.68L12 5.5zm0 1.73l3.77 2.18v4.36L12 15.95l-3.77-2.18V9.41L12 7.23z"/></svg>
+                            REST APIs
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#E76F00" d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.762.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218"/><path fill="#E76F00" d="M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0 0-8.216 2.051-4.292 6.573"/><path fill="#E76F00" d="M14.401 0s2.494 2.494-2.365 6.338c-3.896 3.083-.889 4.842-.001 6.851-2.274-2.053-3.943-3.858-2.824-5.541 1.644-2.469 6.197-3.665 5.19-7.648"/></svg>
+                            Java
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#6DB33F" d="M20.59 5.41a10.5 10.5 0 0 1 .42 2.42c0 2.59-.95 4.7-2.84 6.34a8.04 8.04 0 0 1-5.27 1.88c-.31 0-.61-.01-.91-.04L8.2 18.2a1.37 1.37 0 0 1-.66.17c-.38 0-.74-.15-1.01-.42a1.43 1.43 0 0 1-.25-1.67l2.2-3.78a8.33 8.33 0 0 1-3.26-3.35A8.56 8.56 0 0 1 4.03 5.5c0-.3.01-.59.04-.88A10.96 10.96 0 0 1 7.64 1.2 10.8 10.8 0 0 1 12 .18c1.56 0 3.06.35 4.44 1.03a10.96 10.96 0 0 1 4.15 4.2z"/></svg>
+                            Spring Boot
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#009688" d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12 6.626 0 12-5.373 12-12 0-6.625-5.374-12-12-12zm-.624 3.734h1.248v1.602h-1.248V3.734zm-3.15.96l1.082.625-1.248 2.16-1.082-.625 1.248-2.16zm7.548.001l1.248 2.16-1.082.624-1.248-2.16 1.082-.624zM12 8.11c2.142 0 3.89 1.747 3.89 3.89s-1.748 3.89-3.89 3.89-3.89-1.747-3.89-3.89S9.858 8.11 12 8.11zm-6.938.926l2.16 1.248-.624 1.082-2.16-1.248.624-1.082zm13.876 0l.624 1.082-2.16 1.248-.624-1.082 2.16-1.248zM3.734 11.376h1.602v1.248H3.734v-1.248zm14.93 0h1.602v1.248h-1.602v-1.248zm-13.65 2.706l2.16 1.248-.624 1.082-2.16-1.248.624-1.082zm14.93.624l.624 1.082-2.16 1.248-.624-1.082 2.16-1.248zm-12.146 2.46l1.082.625-1.248 2.16-1.082-.625 1.248-2.16zm7.548.001l1.248 2.16-1.082.624-1.248-2.16 1.082-.624zm-4.722 1.098h1.248v1.602h-1.248v-1.602z"/></svg>
+                            FastAPI
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#777BB4" d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.866 1.55zm5.795-.408c-.24.58-.59 1.06-1.046 1.44-.458.381-.99.645-1.595.79-.286.068-.735.103-1.347.103H9.116l.33-1.681h.96c.454 0 .78-.046.98-.138.303-.138.526-.383.667-.735.054-.135.08-.282.08-.436 0-.24-.096-.416-.287-.524-.192-.108-.504-.162-.938-.162h-.982l.97-4.964h1.378l-.573 2.94h.575c.685 0 1.17.07 1.46.212.288.14.482.375.582.706.053.175.067.395.067.661 0 .333-.05.67-.153 1.012-.051.168-.113.335-.186.496zm5.677-1.142c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164h-1.18l-.327 1.681h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.418.477 1.002.33 1.752a2.836 2.836 0 0 1-.866 1.55zm-.94-1.478c.092-.47.05-.802-.125-.995-.174-.193-.523-.29-1.047-.29h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.456-.559.55-1.049z"/></svg>
+                            PHP
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI / ML -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">AI / ML</h3>
+                        <p class="skill-group-desc">Artificial intelligence, agents, and machine learning</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#FF6F00" d="M1.292 5.856L11.54 0v4.672L5.888 7.896l-4.596-2.04zM1.292 18.144l10.248 5.856v-4.672L5.888 16.104l-4.596 2.04zM1.292 12l4.596 2.04 5.652-3.24V6.128L5.888 9.96 1.292 12zM22.708 5.856L12.46 0v4.672l5.652 3.224 4.596-2.04zM22.708 18.144L12.46 24v-4.672l5.652-3.224 4.596 2.04zM22.708 12l-4.596 2.04-5.652-3.24V6.128l5.652 3.832L22.708 12z"/></svg>
+                            RAG Systems
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#10A37F" d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.998 5.998 0 0 0-3.998 2.9 6.042 6.042 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.516 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073z"/></svg>
+                            LLM Integration
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#7C4DFF" d="M21 10.5a2.5 2.5 0 0 0-2.5-2.5H16V6.5a2.5 2.5 0 0 0-5 0V8H8.5A2.5 2.5 0 0 0 6 10.5V12h1.5a2.5 2.5 0 0 1 0 5H6v1.5A2.5 2.5 0 0 0 8.5 21H10v-1.5a2.5 2.5 0 0 1 5 0V21h1.5a2.5 2.5 0 0 0 2.5-2.5V17h-1.5a2.5 2.5 0 0 1 0-5H19v-1.5zM12 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                            AI Agents
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#FF6F00" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="#FF6F00" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            Machine Learning
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">Databases</h3>
+                        <p class="skill-group-desc">Data storage and query systems</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#47A248" d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 11.91 24h.123c.161-.564.398-1.186.763-1.78 1.024-1.167 2.108-1.593 2.559-2.89.428-1.233.36-2.595-.161-3.775z"/></svg>
+                            MongoDB
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#4479A1" d="M12.738 1.842c-.026-.026-.078-.026-.104 0L.78 10.894c-.13.104-.13.286 0 .39l11.854 9.052c.026.026.078.026.104 0l11.854-9.052c.13-.104.13-.286 0-.39z"/><path fill="#4479A1" d="M12.738 14.258c-.026-.026-.078-.026-.104 0L.78 23.31c-.13.104-.13.286 0 .39l11.854-.052c.026.026.078.026.104 0l11.854.052c.13-.104.13-.286 0-.39z" opacity=".5"/></svg>
+                            MySQL
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#3ECF8E" d="M21.362 9.354H12V.396a.396.396 0 0 0-.745-.208L2.203 12.58a.396.396 0 0 0 .349.592h9.362v8.958a.396.396 0 0 0 .745.208l9.052-12.392a.396.396 0 0 0-.349-.592z"/></svg>
+                            Supabase
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">Development Tools</h3>
+                        <p class="skill-group-desc">IDE, version control, testing, and design</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#007ACC" d="M23.15 2.587L18.21.21a1.166 1.166 0 0 0-1.328.217L7.287 9.613 3.022 6.413a.777.777 0 0 0-.993.053L.525 7.906a.777.777 0 0 0-.003 1.119L4.2 12 .522 14.975a.777.777 0 0 0 .003 1.119l1.504 1.44a.777.777 0 0 0 .993.053l4.265-3.2 9.595 9.186a1.165 1.165 0 0 0 1.328.218l4.94-2.377a1.167 1.167 0 0 0 .68-1.06V3.648a1.167 1.167 0 0 0-.68-1.06zM17.66 17.63l-7.018-5.32L17.66 6.99z"/></svg>
+                            VS Code
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#FE315D" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.17 14.93L7.2 13.3l1.41-1.41 2.22 2.22 5.58-5.58 1.41 1.41-6.99 6.99z"/></svg>
+                            Antigravity
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#FF6C37" d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099z"/></svg>
+                            Postman
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" fill="#000" stroke="#FE315D" stroke-width="0"/><text x="5" y="17" font-size="12" font-weight="bold" fill="#aaa" font-family="sans-serif">IJ</text></svg>
+                            IntelliJ IDEA
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#F05032" d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.72.719-1.886.719-2.606 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.713.721-1.88.721-2.593 0-.713-.717-.713-1.879 0-2.6.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+                            Git
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#aaa" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            GitHub
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#10A37F" d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.998 5.998 0 0 0-3.998 2.9 6.042 6.042 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.516 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073z"/></svg>
+                            Codex
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#F24E1E" d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491z"/><path fill="#FF7262" d="M8.148 24c2.476 0 4.49-2.014 4.49-4.49v-4.49H8.148c-2.476 0-4.49 2.014-4.49 4.49S5.672 24 8.148 24z"/><path fill="#1ABCFE" d="M12.735 15.02v-4.49H8.148c-2.476 0-4.49 2.014-4.49 4.49s2.014 4.49 4.49 4.49h.098z"/><path fill="#0ACF83" d="M12.735 0v8.981H8.148C5.672 8.981 3.658 6.967 3.658 4.49S5.672 0 8.148 0z"/><path fill="#A259FF" d="M12.735 8.981v6.039H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.587z"/></svg>
+                            Figma
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#F37626" d="M7.157 22.201A1.784 1.784 0 0 1 5.374 24a1.784 1.784 0 0 1-1.784-1.799 1.784 1.784 0 0 1 1.784-1.799 1.784 1.784 0 0 1 1.783 1.799zM20.582 1.427a1.415 1.415 0 0 1-1.415 1.415c-.783 0-1.416-.633-1.416-1.415S18.384 0 19.167 0a1.415 1.415 0 0 1 1.415 1.427zM11.818 9.578a2.594 2.594 0 1 1-5.188 0 2.594 2.594 0 0 1 5.188 0z"/><path fill="#F37626" d="M17.588 12.108a2.244 2.244 0 1 1-4.488 0 2.244 2.244 0 0 1 4.488 0zM13.648 16.237a1.735 1.735 0 1 1-3.47 0 1.735 1.735 0 0 1 3.47 0z"/></svg>
+                            Jupyter
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#635BFF" d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.591-7.305z"/></svg>
+                            Stripe
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#FCBE25" d="M2 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm0 2h20v.511l-10 6.5L2 6.511V6zm0 2.222l10 6.5 10-6.5V18H2V8.222z"/></svg>
+                            EmailJS
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment -->
+                <div class="skill-group animate-on-scroll">
+                    <div class="skill-group-header">
+                        <h3 class="skill-group-title">Deployment</h3>
+                        <p class="skill-group-desc">Hosting, CI/CD, and deployment platforms</p>
+                    </div>
+                    <div class="skill-group-divider"></div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#aaa" d="M24 22.525H0l12-21.05 12 21.05z"/></svg>
+                            Vercel
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#00C7B7" d="M16.934 8.519a1.044 1.044 0 0 1 .303.23l2.349-1.045-2.998-2.998-1.045 2.349c.108.07.209.15.303.23l1.088 1.234zm-2.003 2.59a1.08 1.08 0 0 1-.544-.544l-1.16-1.16L6.157 16.475l1.634 1.634 7.07-7.07zM0 20.272l3.355 3.355 2.542-2.542L2.542 17.73zm23.627-16.32L20.272 0 7.405 12.867l3.355 3.355z"/></svg>
+                            Netlify
+                        </div>
+                        <div class="skill-chip">
+                            <svg class="skill-icon" viewBox="0 0 24 24"><path fill="#aaa" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            GitHub Pages
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge oracle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-title">OCI 2025 Certified Generative AI Professional</h4>
+                        <p class="cert-issuer">Oracle University</p>
+                        <span class="cert-date">Oct 2025</span>
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge oracle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-title">Oracle AI Vector Search Certified Professional</h4>
+                        <p class="cert-issuer">Oracle University</p>
+                        <span class="cert-date">Oct 2025</span>
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge oracle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-title">OCI 2025 Certified AI Foundations Associate</h4>
+                        <p class="cert-issuer">Oracle University</p>
+                        <span class="cert-date">Oct 2025</span>
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge nptel">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-title">Data Structures and Algorithms using Java</h4>
+                        <p class="cert-issuer">NPTEL, IIT Kharagpur</p>
+                        <span class="cert-date">Jul — Oct 2025</span>
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge udemy">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-title">Complete Web Development Bootcamp</h4>
+                        <p class="cert-issuer">Udemy — Hitesh Choudhary</p>
+                        <span class="cert-date">Completed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="certs-view-all animate-on-scroll">
+                <a href="certifications.html" class="btn-primary btn-large">
+                    <span>View All 18+ Certifications</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="section-container">
+            <div class="contact-header animate-on-scroll">
+                <h2 class="contact-heading">Let's Connect</h2>
+                <p class="contact-subheading">Have a project in mind or want to collaborate? Get in touch!</p>
+            </div>
+            <div class="contact-grid animate-on-scroll">
+                <!-- Left: Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <input type="hidden" name="access_key" value="0c832b36-5f5c-420a-936a-6e400d84038c">
+                    <input type="hidden" name="subject" value="New Portfolio Contact from Website">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="checkbox" name="botcheck" style="display: none;">
+                    <div class="form-group">
+                        <input type="text" name="name" id="contactName" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="contactEmail" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="contactMessage" placeholder="Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-send-btn" id="contactSubmitBtn">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+
+                <!-- Right: Connect Info -->
+                <div class="contact-info">
+                    <div class="connect-block">
+                        <h3 class="connect-title">Connect With Me</h3>
+                        <div class="connect-socials">
+                            <a href="https://github.com/Suraj190805" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon-link">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/suraj-s-77ss77" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon-link">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="mailto:surajsatish33@gmail.com" aria-label="Email" class="social-icon-link">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="connect-details">
+                        <p class="connect-detail-item">
+                            <span class="connect-label">Location:</span> Bengaluru, India · Available from July 2026
+                        </p>
+                        <p class="connect-detail-item">
+                            <span class="connect-label">Status:</span> Open to Full Stack / AI Engineer roles · Internship / Job
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://github.com/Suraj190805" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/suraj-s-77ss77" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:surajsatish33@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                </a>
+            </div>
+            <p class="footer-text">
+                Designed & Built by <strong>Suraj S</strong>
+            </p>
+            <p class="footer-copyright">© 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Suraj S | Full Stack & AI Engineer</title>
+    <meta name="description" content="Featured projects by Suraj S — Full-stack web applications, AI/ML platforms, multi-agent systems, and IoT solutions built with React, Node.js, Python, PyTorch, and LangChain.">
+    <meta name="keywords" content="Suraj S, Projects, Full Stack, AI Engineer, React, Node.js, Python, Machine Learning, Portfolio">
+    <meta name="author" content="Suraj S">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html#hero" class="nav-logo">Suraj S</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about" class="nav-link" data-text="About">About</a>
+                <a href="index.html#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="projects.html" class="nav-link active" data-text="Projects">Projects</a>
+                <a href="index.html#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="certifications.html" class="nav-link" data-text="Certs">Certs</a>
+                <a href="index.html#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+            <a href="uploads/SurajResumee.pdf" target="_blank" class="nav-resume-btn">
+                <span>Resume</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="projects-hero">
+        <div class="section-container">
+            <div class="projects-hero-content animate-on-scroll">
+                <a href="index.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Back to Portfolio</span>
+                </a>
+                <div class="projects-hero-header">
+                    <span class="section-number">03.</span>
+                    <h1 class="projects-hero-title">Featured Projects</h1>
+                </div>
+                <p class="projects-hero-description">
+                    A curated collection of my most impactful work — spanning 
+                    <span class="highlight">full-stack applications</span>, 
+                    <span class="highlight">AI/ML platforms</span>, and 
+                    <span class="highlight">multi-agent systems</span>. 
+                    Each project represents hands-on engineering with real-world complexity.
+                </p>
+                <div class="projects-stats">
+                    <div class="projects-stat">
+                        <span class="projects-stat-number" data-count="8">0</span><span class="projects-stat-plus">+</span>
+                        <span class="projects-stat-label">Projects</span>
+                    </div>
+                    <div class="projects-stat-divider"></div>
+                    <div class="projects-stat">
+                        <span class="projects-stat-number" data-count="6">0</span><span class="projects-stat-plus">+</span>
+                        <span class="projects-stat-label">Tech Stacks</span>
+                    </div>
+                    <div class="projects-stat-divider"></div>
+                    <div class="projects-stat">
+                        <span class="projects-stat-number" data-count="4">0</span>
+                        <span class="projects-stat-label">Live Deployments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-hero-gradient"></div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="projects-filter-section">
+        <div class="section-container">
+            <div class="filter-tabs animate-on-scroll" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    All Projects
+                </button>
+                <button class="filter-tab" data-filter="fullstack">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    Full Stack
+                </button>
+                <button class="filter-tab" data-filter="ai">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><circle cx="12" cy="15" r="2"/></svg>
+                    AI / ML
+                </button>
+                <button class="filter-tab" data-filter="iot">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    IoT / Hardware
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-main">
+        <div class="section-container">
+            <div class="projects-showcase" id="projectsShowcase">
+
+                <!-- Project 1: MediScan AI -->
+                <article class="project-showcase-card animate-on-scroll" data-category="fullstack ai" id="project-mediscan">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-badge featured">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Featured
+                        </div>
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon mediscan">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://medi-scan-wine.vercel.app/" target="_blank" rel="noopener" class="project-showcase-link live" title="Live Demo">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <span>Live</span>
+                                </a>
+                                <a href="https://github.com/Suraj190805/MediScan" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">MediScan AI</h2>
+                        <p class="project-showcase-subtitle">AI-Powered Medical Image Diagnostics Platform</p>
+                        <p class="project-showcase-description">
+                            A three-service microservice platform that combines deep learning with clinical interfaces. Upload chest X-rays, brain MRIs, bone X-rays, or CT scans and receive instant AI predictions with Grad-CAM visual explanations, SHAP-style region analysis, and clinical reasoning.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🧠</span>
+                                <span>Multi-model DenseNet-121 for pneumonia, tumor, fracture & COVID detection</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🔥</span>
+                                <span>Grad-CAM heatmaps & SHAP-style anatomical grid analysis</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🔐</span>
+                                <span>JWT auth with RBAC (radiologist, physician, admin roles)</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📄</span>
+                                <span>PDF diagnostic report generation with analytics dashboard</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag react">React 19</span>
+                            <span class="tech-tag node">Express.js</span>
+                            <span class="tech-tag python">FastAPI</span>
+                            <span class="tech-tag python">PyTorch</span>
+                            <span class="tech-tag db">MongoDB</span>
+                            <span class="tech-tag ai">DenseNet-121</span>
+                            <span class="tech-tag ai">Grad-CAM</span>
+                        </div>
+                        <div class="project-showcase-architecture">
+                            <span class="arch-label">Architecture</span>
+                            <div class="arch-flow">
+                                <span class="arch-node">React SPA</span>
+                                <span class="arch-arrow">→</span>
+                                <span class="arch-node">Express API</span>
+                                <span class="arch-arrow">→</span>
+                                <span class="arch-node">FastAPI + PyTorch</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 2: Stack Overflow Clone -->
+                <article class="project-showcase-card animate-on-scroll" data-category="fullstack ai" id="project-stackoverflow">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-badge featured">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Featured
+                        </div>
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon stackoverflow">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20h14"/><path d="M4 17h14"/><path d="M6.5 13.5l10.5 1.5"/><path d="M8.5 9.5l9.5 4"/><path d="M11 6l8 6"/><path d="M18 4v16"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://stack-over-flow-psi.vercel.app" target="_blank" rel="noopener" class="project-showcase-link live" title="Live Demo">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <span>Live</span>
+                                </a>
+                                <a href="https://github.com/Suraj190805/Stack-OverFlow" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">Stack Overflow Clone</h2>
+                        <p class="project-showcase-subtitle">Production-Grade Q&A Platform with AI, Payments & i18n</p>
+                        <p class="project-showcase-description">
+                            A comprehensive, production-grade replica of Stack Overflow featuring AI-powered assistance via Google Gemini, a 4-tier subscription payment system, social networking with feeds, multi-language support across 6 languages (500+ translation keys), and a gamified points-based reward economy.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🤖</span>
+                                <span>AI Assist powered by Google Gemini 2.5 Flash with persistent chat</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">💳</span>
+                                <span>4-tier subscription system (Free → Gold) with payment simulation</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🌍</span>
+                                <span>Full i18n across 6 languages with OTP-verified switching</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🏆</span>
+                                <span>Gamified reward economy with point transfers & transaction history</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag react">React 19</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag node">Express.js</span>
+                            <span class="tech-tag db">MongoDB Atlas</span>
+                            <span class="tech-tag ai">Gemini AI</span>
+                            <span class="tech-tag other">JWT</span>
+                            <span class="tech-tag other">EmailJS</span>
+                        </div>
+                        <div class="project-showcase-architecture">
+                            <span class="arch-label">Architecture</span>
+                            <div class="arch-flow">
+                                <span class="arch-node">React + Vite</span>
+                                <span class="arch-arrow">→</span>
+                                <span class="arch-node">Express REST API</span>
+                                <span class="arch-arrow">→</span>
+                                <span class="arch-node">MongoDB Atlas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 3: AI Crisis Decision System -->
+                <article class="project-showcase-card animate-on-scroll" data-category="ai" id="project-crisis">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-badge featured">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Featured
+                        </div>
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon crisis">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://github.com/Suraj190805/crisis-decision-system" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">Global Crisis Decision System</h2>
+                        <p class="project-showcase-subtitle">Multi-Agent AI for Geopolitical & Economic Crisis Forecasting</p>
+                        <p class="project-showcase-description">
+                            A predictive multi-agent application that orchestrates specialized AI crews to forecast geopolitical, economic, supply chain, and humanitarian crises in real-time. Features chain reaction simulation, an AI vs Reality accuracy tracker, supply chain outage prediction, and a humanitarian refugee resource allocator validated against UN data.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">⛓️</span>
+                                <span>Chain Reaction Simulator modeling Nth-order economic consequences</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>AI vs Reality tracker with 30-day prediction accuracy validation</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🚢</span>
+                                <span>Supply chain disruption prediction with alternate routing costs</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">⛺</span>
+                                <span>Humanitarian resource allocator using UNHCR, WHO & IOM data</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag ai">LangChain</span>
+                            <span class="tech-tag ai">Multi-Agent</span>
+                            <span class="tech-tag ai">RAG</span>
+                            <span class="tech-tag ai">LLMs</span>
+                            <span class="tech-tag other">Yahoo Finance</span>
+                            <span class="tech-tag other">NewsAPI</span>
+                        </div>
+                        <div class="project-showcase-architecture">
+                            <span class="arch-label">Architecture</span>
+                            <div class="arch-flow">
+                                <span class="arch-node">News Ingestion</span>
+                                <span class="arch-arrow">→</span>
+                                <span class="arch-node">Multi-Agent Crew</span>
+                                <span class="arch-arrow">→</span>
+                                <span class="arch-node">Decision Reports</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 4: Knowledge Decay Tracker -->
+                <article class="project-showcase-card animate-on-scroll" data-category="fullstack ai" id="project-kdt">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon kdt">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://github.com/Suraj190805/knowledge-decay-tracker" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">Knowledge Decay Tracker</h2>
+                        <p class="project-showcase-subtitle">AI-Powered Learning Management & Retention Platform</p>
+                        <p class="project-showcase-description">
+                            A full-stack AI learning platform that transforms study materials into interactive quizzes and summaries. Students upload PDFs or images, and the system uses LLM-based content extraction to generate personalized revision schedules, learning analytics, and AI-powered assessments.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📂</span>
+                                <span>File ingestion pipeline supporting PDFs and images via Multer</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🧠</span>
+                                <span>LLM-powered quiz generation and automatic content summarization</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>Learning analytics dashboard with revision tracking & decay curves</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag react">React.js</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag node">Express.js</span>
+                            <span class="tech-tag db">MongoDB</span>
+                            <span class="tech-tag ai">Groq API</span>
+                            <span class="tech-tag other">PDF-Parse</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 5: NeuroSense -->
+                <article class="project-showcase-card animate-on-scroll" data-category="ai" id="project-neurosense">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon neurosense">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><circle cx="12" cy="15" r="2"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://github.com/Suraj190805/NeuroSense" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">NeuroSense</h2>
+                        <p class="project-showcase-subtitle">AI-Based Neural Signal Processing & Analysis System</p>
+                        <p class="project-showcase-description">
+                            An intelligent neural signal processing system built with Python that applies machine learning techniques to analyze and classify neural patterns. The system features data preprocessing pipelines, feature extraction modules, and classification models for neurological signal interpretation.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🧬</span>
+                                <span>Neural signal preprocessing and feature extraction pipeline</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📈</span>
+                                <span>ML-based signal classification and pattern recognition</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>Data visualization and analysis reporting</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag ai">Machine Learning</span>
+                            <span class="tech-tag python">NumPy</span>
+                            <span class="tech-tag python">Pandas</span>
+                            <span class="tech-tag other">Signal Processing</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 6: WiseCare / CareCompanion AI -->
+                <article class="project-showcase-card animate-on-scroll" data-category="fullstack ai" id="project-wisecare">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon wisecare">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://wise-care-tau.vercel.app" target="_blank" rel="noopener" class="project-showcase-link live" title="Live Demo">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <span>Live</span>
+                                </a>
+                                <a href="https://github.com/Suraj190805/WiseCare" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">CareCompanion AI</h2>
+                        <p class="project-showcase-subtitle">Smart Elderly Independence & Safety Platform</p>
+                        <p class="project-showcase-description">
+                            An AI-driven healthcare companion built for the AI-Driven Healthcare Hackathon 2026 that enables elderly individuals to live independently with real-time health monitoring, multilingual voice interaction, medication reminders, emergency SOS alerts, personalized nutrition guidance, and seamless caregiver connectivity.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🗣️</span>
+                                <span>Multilingual AI voice chatbot (Kannada, Hindi, English & more)</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">💊</span>
+                                <span>Smart medication reminders with caregiver miss-alerts</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🥗</span>
+                                <span>AI-personalized nutrition plans with food interaction warnings</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🚨</span>
+                                <span>Emergency SOS with real-time GPS & caregiver notification</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag react">React.js</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag ai">AI Chatbot</span>
+                            <span class="tech-tag other">Speech-to-Text</span>
+                            <span class="tech-tag other">Text-to-Speech</span>
+                            <span class="tech-tag other">GPS</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 7: Revlytics -->
+                <article class="project-showcase-card animate-on-scroll" data-category="fullstack" id="project-revlytics">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon revlytics">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            </div>
+                            <div class="project-showcase-links">
+                                <a href="https://revlytics-ten.vercel.app" target="_blank" rel="noopener" class="project-showcase-link live" title="Live Demo">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <span>Live</span>
+                                </a>
+                                <a href="https://github.com/Suraj190805/Revlytics" target="_blank" rel="noopener" class="project-showcase-link" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="project-showcase-title">Revlytics</h2>
+                        <p class="project-showcase-subtitle">Customer Voice Command Center & Sentiment Dashboard</p>
+                        <p class="project-showcase-description">
+                            A premium sentiment analysis dashboard built for e-commerce brand owners who receive thousands of customer reviews monthly. Aggregates feedback across Amazon, Flipkart, Shopify, and Google into a centralized command center with Brand Health Scores, AI-generated weekly briefs, issue triage, and product health drilldowns.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>Brand Health Score with week-over-week sentiment tracking</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🔍</span>
+                                <span>Product Health Desk with sentiment drilldown & review breakdown</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🤖</span>
+                                <span>AI-generated weekly brief summarizing positive & negative themes</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag react">HTML</span>
+                            <span class="tech-tag other">CSS</span>
+                            <span class="tech-tag node">JavaScript</span>
+                            <span class="tech-tag ai">Sentiment Analysis</span>
+                            <span class="tech-tag other">Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+                <!-- Project 8: Alerto IoT -->
+                <article class="project-showcase-card animate-on-scroll" data-category="iot" id="project-alerto">
+                    <div class="project-showcase-inner">
+                        <div class="project-showcase-header">
+                            <div class="project-showcase-icon alerto">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <div class="project-showcase-links"></div>
+                        </div>
+                        <h2 class="project-showcase-title">Alerto — IoT Accident Detection</h2>
+                        <p class="project-showcase-subtitle">Real-Time Vehicular Collision Detection & Alert System</p>
+                        <p class="project-showcase-description">
+                            An IoT-based embedded system that detects vehicular collisions using accelerometer data and autonomously dispatches real-time GPS coordinates to emergency contacts via SMS and phone calls. Features a manual override button to suppress false positives and a calibrated g-force threshold for accurate impact detection.
+                        </p>
+                        <div class="project-showcase-features">
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📡</span>
+                                <span>Real-time collision detection via accelerometer g-force monitoring</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">📍</span>
+                                <span>Autonomous GPS dispatch with SMS & phone call alerts</span>
+                            </div>
+                            <div class="project-feature-item">
+                                <span class="feature-icon">🔘</span>
+                                <span>Manual override button to suppress false collision alerts</span>
+                            </div>
+                        </div>
+                        <div class="project-showcase-tech">
+                            <span class="tech-tag other">Arduino</span>
+                            <span class="tech-tag other">Embedded C</span>
+                            <span class="tech-tag other">GPS Module</span>
+                            <span class="tech-tag other">Accelerometer</span>
+                            <span class="tech-tag other">GSM/SMS</span>
+                        </div>
+                    </div>
+                    <div class="project-showcase-glow"></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub CTA Section -->
+    <section class="github-cta-section">
+        <div class="section-container">
+            <div class="github-cta animate-on-scroll">
+                <div class="github-cta-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <h3 class="github-cta-title">Explore More on GitHub</h3>
+                <p class="github-cta-text">These are just the highlights. Check out my GitHub for more experiments, contributions, and ongoing work.</p>
+                <a href="https://github.com/Suraj190805" target="_blank" rel="noopener" class="btn-primary btn-large">
+                    <span>View GitHub Profile</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://github.com/Suraj190805" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/suraj-s-77ss77" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:surajsatish33@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                </a>
+            </div>
+            <p class="footer-text">
+                Designed & Built by <strong>Suraj S</strong>
+            </p>
+            <p class="footer-copyright">© 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="projects.js"></script>
+</body>
+</html>
