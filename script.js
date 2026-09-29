@@ -205,7 +205,87 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200);
 });
 
-// ===== Contact Form (Web3Forms) =====
+// ===== Email Sending Interface Modal =====
+const emailModal = document.getElementById('emailModal');
+const emailModalClose = document.getElementById('emailModalClose');
+const emailModalBackdrop = document.getElementById('emailModalBackdrop');
+const emailCopyBtn = document.getElementById('emailCopyBtn');
+const modalDefaultMailBtn = document.getElementById('emailClientDefault');
+const modalGmailBtn = document.getElementById('emailClientGmail');
+const modalOutlookBtn = document.getElementById('emailClientOutlook');
+
+function openEmailModal() {
+    if (emailModal) {
+        emailModal.classList.add('active');
+        emailModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeEmailModal() {
+    if (emailModal) {
+        emailModal.classList.remove('active');
+        emailModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+}
+
+function updateEmailModalUrls(encodedSubject, encodedBody) {
+    if (modalDefaultMailBtn) {
+        modalDefaultMailBtn.href = `mailto:surajsatish33@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+    }
+    if (modalGmailBtn) {
+        modalGmailBtn.href = `https://mail.google.com/mail/?view=cm&fs=1&to=surajsatish33@gmail.com&su=${encodedSubject}&body=${encodedBody}`;
+    }
+    if (modalOutlookBtn) {
+        modalOutlookBtn.href = `https://outlook.live.com/mail/0/deeplink/compose?to=surajsatish33@gmail.com&subject=${encodedSubject}&body=${encodedBody}`;
+    }
+}
+
+// Bind open triggers
+document.querySelectorAll('.mail-trigger, #contactMailBtn, a[href^="mailto:surajsatish33@gmail.com"]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openEmailModal();
+    });
+});
+
+if (emailModalClose) emailModalClose.addEventListener('click', closeEmailModal);
+if (emailModalBackdrop) emailModalBackdrop.addEventListener('click', closeEmailModal);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && emailModal && emailModal.classList.contains('active')) {
+        closeEmailModal();
+    }
+});
+
+// Copy email address button
+if (emailCopyBtn) {
+    emailCopyBtn.addEventListener('click', () => {
+        const email = 'surajsatish33@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+            emailCopyBtn.classList.add('copied');
+            const copyText = emailCopyBtn.querySelector('.copy-text');
+            if (copyText) copyText.textContent = 'Copied!';
+            setTimeout(() => {
+                emailCopyBtn.classList.remove('copied');
+                if (copyText) copyText.textContent = 'Copy';
+            }, 2000);
+        }).catch(() => {
+            // Fallback for older browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = email;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            emailCopyBtn.classList.add('copied');
+            setTimeout(() => emailCopyBtn.classList.remove('copied'), 2000);
+        });
+    });
+}
+
+// ===== Contact Form =====
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 const submitBtn = document.getElementById('contactSubmitBtn');
@@ -222,6 +302,10 @@ if (contactForm) {
 
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
+
+        const subject = encodeURIComponent(`Portfolio Inquiry from ${data.name || 'Visitor'}`);
+        const body = encodeURIComponent(`${data.message || ''}\n\n— From: ${data.name || ''} (${data.email || ''})`);
+        const mailtoUrl = `mailto:surajsatish33@gmail.com?subject=${subject}&body=${body}`;
 
         try {
             const response = await fetch('https://api.web3forms.com/submit', {
@@ -240,19 +324,24 @@ if (contactForm) {
                 formStatus.className = 'form-status success visible';
                 contactForm.reset();
             } else {
-                throw new Error(result.message || 'Something went wrong');
+                throw new Error(result.message || 'Direct submission unavailable');
             }
         } catch (error) {
-            formStatus.textContent = '✕ Failed to send message. Please try again or email me directly.';
-            formStatus.className = 'form-status error visible';
+            // Update email modal URLs with user message and pop up interface
+            updateEmailModalUrls(subject, body);
+            openEmailModal();
+            window.location.href = mailtoUrl;
+
+            formStatus.textContent = '✓ Opening email interface to send message...';
+            formStatus.className = 'form-status success visible';
         } finally {
             submitBtn.disabled = false;
             submitBtn.classList.remove('loading');
 
-            // Auto-hide status after 5 seconds
+            // Auto-hide status after 6 seconds
             setTimeout(() => {
                 formStatus.classList.remove('visible');
-            }, 5000);
+            }, 6000);
         }
     });
 }

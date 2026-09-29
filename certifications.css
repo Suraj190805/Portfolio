@@ -354,7 +354,9 @@
 .cert-company-badge.mastercard,
 .cert-company-badge.tata,
 .cert-company-badge.tcs,
-.cert-company-badge.nptel {
+.cert-company-badge.nptel,
+.cert-company-badge.openhpi,
+.cert-company-badge.mindluster {
     background: var(--bg-secondary);
     border: 1px solid var(--card-border);
 }
@@ -370,7 +372,9 @@
 .cert-company-badge.mastercard .company-name,
 .cert-company-badge.tata .company-name,
 .cert-company-badge.tcs .company-name,
-.cert-company-badge.nptel .company-name {
+.cert-company-badge.nptel .company-name,
+.cert-company-badge.openhpi .company-name,
+.cert-company-badge.mindluster .company-name {
     color: var(--text-secondary);
 }
 
