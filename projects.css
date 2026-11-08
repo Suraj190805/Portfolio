@@ -260,7 +260,9 @@
 .project-showcase-icon.neurosense,
 .project-showcase-icon.wisecare,
 .project-showcase-icon.revlytics,
-.project-showcase-icon.alerto {
+.project-showcase-icon.alerto,
+.project-showcase-icon.golf,
+.project-showcase-icon.operations {
     background: var(--bg-secondary);
     color: var(--text-secondary);
 }
